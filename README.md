@@ -35,10 +35,12 @@ data = pd.read_csv('Mall_Customers.csv')
 data.head()
 
 ```
+![image](https://github.com/user-attachments/assets/34d53e8d-2256-4904-bfc5-d1e31837426c)
 
 ```
 data.info()
 ```
+![image](https://github.com/user-attachments/assets/5022ff6a-95eb-40a7-9159-d012c67dedd1)
 
 ```
 data.isnull().sum()
@@ -73,7 +75,7 @@ KMeans(n_clusters = 5)
 y_pred = km.predict(data.iloc[:, 3:])
 y_pred
 ```
-
+![image](https://github.com/user-attachments/assets/a7251cb4-9d32-45e6-abde-140ec80dfb9f)
 
 ```
 data["cluster"] = y_pred
@@ -91,6 +93,7 @@ plt.scatter(df3["Annual Income (k$)"],df3["Spending Score (1-100)"],c="green",la
 plt.scatter(df4["Annual Income (k$)"],df4["Spending Score (1-100)"],c="magenta",label="cluster4")
 
 ```
+![image](https://github.com/user-attachments/assets/c401f8dc-3ac4-4549-98fd-e58930320f2d)
 
 
 ## Result:
